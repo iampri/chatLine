@@ -1,0 +1,25 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "nFfsELKSy7Rda6oLDvxSe8sVKh0=",
+			"path": "github.com/line/line-bot-sdk-go/linebot",
+			"revision": "ec620b9af9b5ebdba700370820c0b6f657f37a3d",
+			"revisionTime": "2017-04-26T04:47:58Z"
+		},
+		{
+			"checksumSHA1": "Y+HGqEkYM15ir+J93MEaHdyFy0c=",
+			"path": "golang.org/x/net/context",
+			"revision": "59a0b19b5533c7977ddeb86b017bf507ed407b12",
+			"revisionTime": "2017-06-03T08:13:02Z"
+		},
+		{
+			"checksumSHA1": "WHc3uByvGaMcnSoI21fhzYgbOgg=",
+			"path": "golang.org/x/net/context/ctxhttp",
+			"revision": "59a0b19b5533c7977ddeb86b017bf507ed407b12",
+			"revisionTime": "2017-06-03T08:13:02Z"
+		}
+	],
+	"rootPath": "github.com/PriewMAXIM/chatLine"
+}
