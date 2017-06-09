@@ -32,7 +32,12 @@ func main() {
 			if event.Type == linebot.EventTypeMessage {
 				switch message := event.Message.(type) {
 				case *linebot.TextMessage:
-					if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(message.Text)).Do(); err != nil {
+                    res, err := bot.GetUserProfile(event.Source.UserID).Do();
+                    if err != nil {
+                        log.Print(err)
+                    }
+					//if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(message.Text)).Do(); err != nil {
+                    if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("สวัสดีคะคุณ " + res.DisplayName)).Do(); err != nil {
 						log.Print(err)
 					}
 				}
