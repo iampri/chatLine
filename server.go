@@ -30,9 +30,10 @@ func main() {
 		}
 		for _, event := range events {
 			if event.Type == linebot.EventTypeMessage {
-				switch message := event.Message.(type) {
+				//switch message := event.Message.(type) {
+                switch event.Message.(type) {
 				case *linebot.TextMessage:
-                    res, err := bot.GetUserProfile(event.Source.UserID).Do();
+                    res, err := bot.GetProfile(event.Source.UserID).Do();
                     if err != nil {
                         log.Print(err)
                     }
